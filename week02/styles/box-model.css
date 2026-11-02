@@ -1,15 +1,36 @@
 .callout {
-    /* write declarations here */
+    max-width: 90%;
+    margin: 5%;
+    height: inherit;
+    border: 2px solid rgb(61, 61, 61);
+    padding: 3%;
+    background-color: rgb(34, 68, 119);
+    color: #fff;
 }
 
 .callout img {
-    /* write declarations here */
+    width: 20%;
+    height: auto;
+    float: right;
+    margin: 1%;
+    border: 2px solid rgb(71, 72, 72);
+    padding: .5%;
+    background-color: #888686;
 }
 
 blockquote {
-    /* write declarations here */
+    font-size: 200%;
+    margin: 1%;
+    max-width: fit-content;
+    max-height: fit-content;
+
 }
 
 cite {
-    /* write declarations here */
+    display: block;
+    font-size: 125%;
+    text-align: right;
+    margin: 1%;
+    border-top: 1px solid #fff;
+    padding-top: .5%;
 }
