@@ -1,7 +1,12 @@
+:root {
+    --standard-border: 1px solid black;
+    --standard-margin: 1%;
+}
+
 header {
     width: 90%;
-    margin: 1%;
-    border: 1px solid black;
+    margin: var(--standard-margin);
+    border: var var(--standard-border);
     padding: 1%;
     background-color: darkblue;
 }
@@ -23,25 +28,30 @@ h1 {
 
 main {
     max-width: 840px;
-    margin: 1%;
+    margin: var(--standard-margin);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--standard-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
+.tab {
+    text-indent: 2em;
+}
+
 p {
+    font-size: medium;
     padding: 0;
 }
 
 aside {
     width: 90%;
-    margin: 1%;
-    border: 1px solid black;
+    margin: var(--standard-margin);
+    border: var(--standard-border);
     padding: 1%;
     background-color: darkblue;
     color: lightsalmon;
@@ -53,7 +63,7 @@ aside img {
 }
 
 footer {
-    margin-top: 1%;
-    border-top: 1px solid black;
+    margin-top: var(--standard-margin);
+    border-top: var(--standard-border);
     text-align: center;
 }
