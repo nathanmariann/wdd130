@@ -34,6 +34,11 @@ header {
     border: 1px solid var(--accent1-color);
 }
 
+header img {
+    width: 150px;
+    height: auto;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color)
@@ -82,7 +87,9 @@ h2 {
 
 .hero article img {
     float: right;
-    width: 150px;
+    width: 125px;
+    height: auto;
+    margin: 5px;
 }
 
 .hero article {
