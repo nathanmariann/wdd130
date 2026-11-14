@@ -1,6 +1,6 @@
 :root {
     --standard-border: 1px solid black;
-    --standard-margin: 1%;
+    --standard-margin: 1rem;
 }
 
 * {
@@ -13,7 +13,7 @@ header {
     width: 825px;
     margin: var(--standard-margin);
     border: var var(--standard-border);
-    padding: 1%;
+    padding: 1rem;
     background-color: darkblue;
 }
 
@@ -39,11 +39,11 @@ main {
 
 main img {
     float: right;
-    width: 110px;
+    width: 220px;
     height: auto;
     border: var(--standard-border);
     padding: 2px;
-    margin-right: 18px;
+    margin: 18px;
     box-shadow: 0 0 30px gray;
 }
 
@@ -57,24 +57,24 @@ p {
 }
 
 aside {
-    width: 51em;
+    width: 20em;
     text-align: center;
     margin: var(--standard-margin);
     border: var(--standard-border);
-    padding: 1%;
+    padding: 1 em;
     background-color: darkblue;
     color: lightsalmon;
 }
 
 aside h2 {
     position: absolute;
-    top: 355px;
-    left: 260px;
+    top: 565px;
+    left: 80px;
     color: rgb(24, 0, 85);
 }
 
 aside img {
-    width: 600px;
+    width: 250px;
     height: auto;
 }
 
@@ -86,7 +86,7 @@ footer {
 
 /* class selectors */
 .box {
-    margin: 1rem;
+    margin-top: 1rem;
     border: 1px solid rgb (0 0 0 / 10%);
     padding: 1rem;
     background-color: #ddd;
