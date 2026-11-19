@@ -9,37 +9,58 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    width: 840px;
+}
+
 header {
-    width: 825px;
-    margin: var(--standard-margin);
+
+    /* margin: var(--standard-margin); */
     border: var var(--standard-border);
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: darkblue;
 }
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: white;
     /* display: block; */
-    padding: 20px;
+
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 h1 {
+    border-bottom: var(--standard-border);
     color: darkblue;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    /* max-width: 840px; */
     margin: var(--standard-margin);
 }
 
 main img {
     float: right;
-    width: 220px;
+    width: 150px;
     height: auto;
     border: var(--standard-border);
     padding: 2px;
@@ -58,18 +79,21 @@ p {
 
 aside {
     width: 20em;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
     margin: var(--standard-margin);
     border: var(--standard-border);
-    padding: 1 em;
+    padding: 1em;
     background-color: darkblue;
     color: lightsalmon;
 }
 
 aside h2 {
     position: absolute;
-    top: 570px;
-    left: 80px;
+    top: 20px;
+    left: 70px;
     color: rgb(24, 0, 85);
 }
 
@@ -87,8 +111,9 @@ footer {
 /* class selectors */
 .box {
     margin-top: 1rem;
-    border: 1px solid rgb (0 0 0 / 10%);
+    border: var(--standard-border);
     padding: 1rem;
+    list-style-position: inside;
     background-color: #ddd;
     color: #000;
 }
