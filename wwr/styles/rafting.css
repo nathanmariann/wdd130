@@ -45,14 +45,8 @@ grid-template-columns: .67fr .33fr;
 
 .grid_column5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(2, Auto);
     gap: 5px;
-}
-
-.grid_column5 img {
-    width: 100%;
-    height: auto;
-    display: block;
+    padding: 8px;
 }
 
 body {
@@ -166,6 +160,17 @@ section {
     border-bottom: none;
 }
 
+.grid_column5 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid_column5 figcaption {
+    margin: 0;
+    text-align: center;
+}
+
 .flex_container p {
     text-align: left;
 }
@@ -177,12 +182,8 @@ section {
     padding: 8px;
 }
 
-section p, figcaption {
+section p, section figcaption {
     color: var(--secondary-color);
-}
-
-figure {
-    padding: 8px;
 }
 
 footer p {
